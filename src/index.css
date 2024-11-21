@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: linear-gradient(
+    135deg,
+    #e0e5ec,
+    #eceff3
+  ); /* Subtle gradient for depth */
+  color: #1a202c; /* Darker gray for better readability */
+}
+
+.glass-effect {
+  background: rgba(220, 223, 228, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for dimension */
+  transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.glass-effect:hover {
+  background: rgba(220, 223, 228, 0.9); /* Slightly more opaque on hover */
+  transform: scale(1.02); /* Zoom effect on hover */
+}
+
+/* Optional accent text class */
+.accent-text {
+  color: #3b82f6; /* Accent color for specific elements */
+}
